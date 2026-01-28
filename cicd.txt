@@ -1,0 +1,16 @@
+Push в main => старт CI pipeline
+1 tests
+запуск тестов
+при fail: pipeline failed
+
+2 build
+docker build
+теги: commit_sha и latest
+
+3 push
+docker login
+docker push 
+
+4 notify
+отправка уведомления в telegram
+уведомление должно выполняться всегда
